@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN adduser user
-RUN apt -yupdate
+RUN apt -y update
 RUN apt install -y barman
 USER user
 WORKDIR /home/user
